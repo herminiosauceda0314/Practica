@@ -50,6 +50,11 @@ public class Empleado extends Persona {
     
     @Override
     public String toString(){
-        return super.toString()+" Salario: $"+salario+" ID: "+idEmpleado+" Contrato: "+tipoContrato+" Area: "+area+" Contratado:  "+fechaContratacion;
+        return super.toString()+
+                 "Salario: $"+salario+
+                 "ID: "+idEmpleado+
+                 "Contrato: "+tipoContrato+
+                 "Area: "+area+
+                 "Contratado: "+fechaContratacion;
     }
 }

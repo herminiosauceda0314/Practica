@@ -16,11 +16,11 @@ public class Persona {
     protected String numero; //numero de contacto
 
     public Persona(String nombre, int edad, String dni, String direccion, String numero) {
-        this.nombre = nombre;
-        this.edad = edad;
-        this.dni = dni;
-        this.direccion = direccion;
-        this.numero = numero;
+        this.nombre=nombre;
+        this.edad=edad;
+        this.dni=dni;
+        this.direccion=direccion;
+        this.numero=numero;
     }
 
     public String getNombre(){
@@ -46,6 +46,10 @@ public class Persona {
     
     @Override
     public String toString() {
-        return "Nombre: "+nombre+",Edad: "+edad+"DNI: "+dni+"Direccion:"+direccion+"Contacto"+numero;
+        return "Nombre: "+nombre+
+                "Edad: "+edad+
+                "DNI: "+dni+
+                "Direccion:"+direccion+
+                "Contacto"+numero;
     }
 }
