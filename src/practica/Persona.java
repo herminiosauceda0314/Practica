@@ -26,30 +26,13 @@ public class Persona {
     public String getNombre(){
         return nombre;
     }
-
-    public int getEdad(){
-        return edad;
-    }
-
-    public String getDni(){
-        return dni;
-    }
-
-    public String getDireccion(){
-        return direccion;
-    }
-
-    public String getNumero(){
-        return numero;
-    }
-    
     
     @Override
     public String toString() {
-        return "Nombre: "+nombre+
-                "Edad: "+edad+
-                "DNI: "+dni+
-                "Direccion:"+direccion+
-                "Contacto"+numero;
+        return " Nombre: "+nombre+
+               " Edad: "+edad+
+               " DNI: "+dni+
+               " Direccion:"+direccion+
+               " Contacto"+numero;
     }
 }

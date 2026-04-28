@@ -21,22 +21,6 @@ public class Gerente extends Empleado implements Evaluador {
         this.presupuesto = presupuesto;
         this.frecuenciaReuniones = frecuenciaReuniones;
     }
-
-    public String getDepartamento() {
-        return departamento;
-    }
-
-    public int getPersonasACargo() {
-        return personasACargo;
-    }
-
-    public double getPresupuesto() {
-        return presupuesto;
-    }
-
-    public String getFrecuenciaReuniones() {
-        return frecuenciaReuniones;
-    }
     
     @Override
     public void trabajar(){
@@ -51,10 +35,10 @@ public class Gerente extends Empleado implements Evaluador {
     @Override
     public String toString(){
         return " -GERENTE- "+super.toString()+
-                "Departamento: "+departamento+
-                "A cargo: "+personasACargo+
-                "Presupuesto: $"+presupuesto+
-                "Reuniones: "+frecuenciaReuniones;
+                " Departamento: "+departamento+
+                " A cargo: "+personasACargo+
+                " Presupuesto: $"+presupuesto+
+                " Reuniones: "+frecuenciaReuniones;
     }
     
 }

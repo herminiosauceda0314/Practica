@@ -23,21 +23,10 @@ public class Desarrollador extends Empleado {
         this.cantidadProyectos = cantidadProyectos;
     }
 
-    public String getLenguajePrincipal(){
+    public String getLenguajePrincipal() {
         return lenguajePrincipal;
     }
-
-    public String getNivelDominio(){
-        return nivelDominio;
-    }
-
-    public String getHerramientas(){
-        return herramientas;
-    }
-
-    public int getCantidadProyectos(){
-        return cantidadProyectos;
-    }
+    
     
     @Override
     public void trabajar(){
@@ -46,11 +35,11 @@ public class Desarrollador extends Empleado {
     
     @Override
     public String toString(){
-        return "- Desarrollador -: "+super.toString()+
-                "Lenguaje: "+lenguajePrincipal+
-                "Nivel:"+nivelDominio+
-                "Herramientas: "+herramientas+
-                "Proyectos: "+cantidadProyectos;
+        return " -DESAROLLADOR- "+super.toString()+
+                " Lenguaje: "+lenguajePrincipal+
+                " Nivel:"+nivelDominio+
+                " Herramientas: "+herramientas+
+                " Proyectos: "+cantidadProyectos;
     }
     
     
