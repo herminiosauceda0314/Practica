@@ -15,13 +15,13 @@ public class Empleado extends Persona {
     protected String tipoContrato;
     protected String area;
 
-    public Empleado(String nombre, int edad, String dni, String direccion, String numero) {
+    public Empleado(String nombre, int edad, String dni, String direccion, String numero, double salario, String idEmpleado, String fechaContratacion, String tipoContrato, String area) {
         super(nombre, edad, dni, direccion, numero);
-        this.salario=salario;
-        this.idEmpleado=idEmpleado;
-        this.fechaContratacion=fechaContratacion;
-        this.tipoContrato=tipoContrato;
-        this.area=area;
+        this.salario = salario;
+        this.idEmpleado = idEmpleado;
+        this.fechaContratacion = fechaContratacion;
+        this.tipoContrato = tipoContrato;
+        this.area = area;
     }
     
     public double getSalario(){
@@ -48,4 +48,8 @@ public class Empleado extends Persona {
         System.out.println(nombre+" esta realizando labores generales.");
     }
     
+    @Override
+    public String toString(){
+        return super.toString()+" Salario: $"+salario+" ID: "+idEmpleado+" Contrato: "+tipoContrato+" Area: "+area+" Contratado:  "+fechaContratacion;
+    }
 }
